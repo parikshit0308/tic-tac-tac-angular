@@ -1,0 +1,61 @@
+.main{
+    // background-color: black;
+    height: 100vh;
+}
+
+nav{
+    background-color: rgb(78, 15, 78);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vw;
+    font-size: 2.4vw;
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(3 , 7vw);
+    grid-template-rows: repeat(3, 7vw);
+    grid-gap : 0.1vw;
+    justify-content: center;
+    // align-items: center;
+    margin-top: 6vw;
+    // font-size: 2vw;
+}
+
+.boxs{
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.boxs:hover{
+    background-color: rgb(246, 186, 248);
+}
+
+.winner{
+    font-size: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin-left: 44vw;
+    margin-top: 1vw;
+}
+
+.reset button{
+    background-color: rgb(78, 15, 78);
+    color: white;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 13vw;
+    height: 5vw;
+    font-size: 2vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    border-radius: 1vw;
+    cursor: pointer;
+    margin-top: 2.4vw;
+    margin-left: 44vw;
+}

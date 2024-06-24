@@ -1,0 +1,17 @@
+<div class="main">
+    <nav>
+        <h2>Tic-Tac-Toe</h2>
+    </nav>
+
+    <div class="game-board">
+        <div *ngFor="let box of boxs; let i = index" class="boxs" (click) ="move(i)">
+            {{box}}
+        </div>
+    </div>
+
+    <div *ngIf="winner" class="winner">Winner : {{ winner }}</div>
+    
+    <div class="reset">
+        <button (click)="reset()">Reset Game</button>
+    </div>
+</div>
